@@ -34,6 +34,8 @@
   padding: 20px;
   border-radius: 12px;
   backdrop-filter: blur(10px);
+  max-height: 700px;
+  overflow-y: auto;
 }
 
 @media (max-width: 968px) {

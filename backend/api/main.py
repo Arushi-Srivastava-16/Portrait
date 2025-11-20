@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 import os
 
-app = FastAPI(title="Magical Portraits API")
+app = FastAPI(title="The Wall of Whispering Frames API")
 
 # Enable CORS for frontend
 app.add_middleware(
@@ -29,7 +29,7 @@ app.include_router(tts.router, prefix="/api")
 
 @app.get("/")
 def root():
-    return {"message": "🪄 Magical Portraits API is running!"}
+    return {"message": "🖼️ The Wall of Whispering Frames API is running!"}
 
 if __name__ == "__main__":
     import uvicorn

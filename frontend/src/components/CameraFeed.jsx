@@ -128,7 +128,7 @@ export default function CameraFeed({ onObjectDetected }) {
       } catch (err) {
         console.error('❌ Error in detection loop:', err);
       }
-    }, 2000); // Detect every 2 seconds
+    }, 5000); // Detect every 5 seconds (reduced frequency to avoid spam)
 
     return interval;
   }, [onObjectDetected]);
