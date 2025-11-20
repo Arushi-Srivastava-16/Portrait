@@ -1,46 +1,99 @@
 .conversation-log {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 12px;
+  background: 
+    linear-gradient(145deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.98));
+  padding: 25px;
+  border-radius: 8px;
   backdrop-filter: blur(10px);
-  max-height: 300px;
+  border: 2px solid rgba(139, 115, 85, 0.3);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.5),
+    0 8px 16px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(212, 175, 55, 0.1);
+  max-height: 400px;
   overflow-y: auto;
 }
 
+.conversation-log::-webkit-scrollbar {
+  width: 10px;
+}
+
+.conversation-log::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.conversation-log::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.6);
+  border-radius: 4px;
+}
+
+.conversation-log::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.8);
+}
+
 .conversation-log h2 {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
+  color: #d4af37;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 15px rgba(212, 175, 55, 0.3);
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
 }
 
 .conversation-messages {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .conversation-turn {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 12px;
-  border-radius: 8px;
-  border-left: 4px solid #ffd700;
+  background: 
+    linear-gradient(145deg, rgba(40, 35, 25, 0.6), rgba(30, 25, 18, 0.7));
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid #d4af37;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.5),
+    inset 0 1px 2px rgba(212, 175, 55, 0.1);
+  transition: all 0.3s ease;
+}
+
+.conversation-turn:hover {
+  transform: translateX(5px);
+  border-left-width: 6px;
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.6),
+    inset 0 1px 2px rgba(212, 175, 55, 0.2);
 }
 
 .portrait-label {
-  font-weight: bold;
-  color: #ffd700;
-  margin-bottom: 5px;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 8px;
   text-transform: capitalize;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+  text-shadow: 
+    1px 1px 2px rgba(0, 0, 0, 0.8),
+    0 0 10px rgba(212, 175, 55, 0.2);
 }
 
 .message-text {
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #e8dcc4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .empty-message {
   text-align: center;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(232, 220, 196, 0.5);
   font-style: italic;
-  padding: 20px;
+  padding: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 

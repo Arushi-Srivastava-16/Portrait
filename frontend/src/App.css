@@ -2,17 +2,59 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  font-family: 'Georgia', serif;
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  font-family: 'Cinzel', 'Georgia', serif;
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   min-height: 100vh;
-  color: #fff;
+  color: #e8dcc4;
+  position: relative;
+}
+
+.app::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 100px,
+      rgba(0, 0, 0, 0.03) 100px,
+      rgba(0, 0, 0, 0.03) 102px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 100px,
+      rgba(0, 0, 0, 0.03) 100px,
+      rgba(0, 0, 0, 0.03) 102px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.app > * {
+  position: relative;
+  z-index: 2;
 }
 
 .app h1 {
   text-align: center;
   font-size: 3em;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #d4af37;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(212, 175, 55, 0.3),
+    0 0 40px rgba(212, 175, 55, 0.2);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
 }
 
 .main-layout {
@@ -23,19 +65,50 @@
 }
 
 .camera-section {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 12px;
+  background: 
+    linear-gradient(145deg, rgba(30, 30, 30, 0.9), rgba(20, 20, 20, 0.95));
+  padding: 25px;
+  border-radius: 8px;
   backdrop-filter: blur(10px);
+  border: 2px solid rgba(139, 115, 85, 0.3);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.5),
+    0 8px 16px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(212, 175, 55, 0.1);
 }
 
 .portraits-section {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 12px;
+  background: 
+    linear-gradient(145deg, rgba(25, 25, 25, 0.95), rgba(15, 15, 15, 0.98));
+  padding: 25px;
+  border-radius: 8px;
   backdrop-filter: blur(10px);
   max-height: 700px;
   overflow-y: auto;
+  border: 2px solid rgba(139, 115, 85, 0.4);
+  box-shadow: 
+    inset 0 2px 4px rgba(0, 0, 0, 0.6),
+    0 8px 16px rgba(0, 0, 0, 0.8),
+    0 0 40px rgba(212, 175, 55, 0.15);
+}
+
+/* Custom scrollbar for Hogwarts theme */
+.portraits-section::-webkit-scrollbar {
+  width: 10px;
+}
+
+.portraits-section::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.portraits-section::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.6);
+  border-radius: 4px;
+}
+
+.portraits-section::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.8);
 }
 
 @media (max-width: 968px) {

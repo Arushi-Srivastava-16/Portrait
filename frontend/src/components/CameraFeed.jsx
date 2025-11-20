@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import axios from 'axios';
+import './CameraFeed.css';
 
 export default function CameraFeed({ onObjectDetected }) {
   const videoRef = useRef(null);
