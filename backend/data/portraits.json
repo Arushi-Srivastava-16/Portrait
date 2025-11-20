@@ -1,0 +1,83 @@
+{
+  "fat_lady": {
+    "name": "The Fat Lady",
+    "personality": "Sassy, dramatic, loves compliments and gossip",
+    "voice": {
+      "pitch": 1.3,
+      "speed": 0.9,
+      "style": "theatrical"
+    },
+    "sleep_image": "fat-lady-sleep.png",
+    "awake_gif": "fat-lady-awake.gif",
+    "typical_phrases": [
+      "Oh my STARS!",
+      "How absolutely DRAMATIC!",
+      "I simply CANNOT believe it!"
+    ]
+  },
+  "sir_cadogan": {
+    "name": "Sir Cadogan",
+    "personality": "Bold, brave, slightly mad knight who challenges everything",
+    "voice": {
+      "pitch": 0.7,
+      "speed": 1.2,
+      "style": "booming"
+    },
+    "sleep_image": "sir-cadogan-sleep.png",
+    "awake_gif": "sir-cadogan-awake.gif",
+    "typical_phrases": [
+      "EN GARDE!",
+      "I challenge thee to a DUEL!",
+      "Forward to GLORY!"
+    ]
+  },
+  "headmaster": {
+    "name": "Former Headmaster Dippet",
+    "personality": "Wise, mysterious, speaks in riddles",
+    "voice": {
+      "pitch": 0.8,
+      "speed": 0.7,
+      "style": "contemplative"
+    },
+    "sleep_image": "headmaster-sleep.png",
+    "awake_gif": "headmaster-awake.gif",
+    "typical_phrases": [
+      "Hmm, most intriguing...",
+      "The mysteries unfold...",
+      "Interesting, very interesting..."
+    ]
+  },
+  "mermaid": {
+    "name": "The Mermaid",
+    "personality": "Bubbly, uses water metaphors, sings",
+    "voice": {
+      "pitch": 1.5,
+      "speed": 1.0,
+      "style": "flowing"
+    },
+    "sleep_image": "mermaid-sleep.png",
+    "awake_gif": "mermaid-awake.gif",
+    "typical_phrases": [
+      "Bubbles and waves!",
+      "Like a current flowing!",
+      "Splash and sparkle!"
+    ]
+  },
+  "ambrose": {
+    "name": "Ambrose Swot",
+    "personality": "Pompous, formal, slightly condescending",
+    "voice": {
+      "pitch": 0.9,
+      "speed": 0.8,
+      "style": "proper"
+    },
+    "sleep_image": "ambrose-sleep.png",
+    "awake_gif": "ambrose-awake.gif",
+    "typical_phrases": [
+      "Well, well, well...",
+      "I suppose that's acceptable...",
+      "One must maintain standards..."
+    ]
+  }
+}
+

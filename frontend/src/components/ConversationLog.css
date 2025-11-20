@@ -1,0 +1,46 @@
+.conversation-log {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.conversation-log h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.conversation-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.conversation-turn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #ffd700;
+}
+
+.portrait-label {
+  font-weight: bold;
+  color: #ffd700;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.message-text {
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.empty-message {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: italic;
+  padding: 20px;
+}
+

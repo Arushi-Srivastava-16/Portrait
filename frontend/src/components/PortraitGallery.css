@@ -1,0 +1,15 @@
+.portrait-gallery {
+  width: 100%;
+}
+
+.portrait-gallery h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.portrait-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
